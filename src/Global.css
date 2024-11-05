@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: rgba(235, 246, 220, 0.868); */
+    font-family: Arial, sans-serif; /* Add a default font */
+}
+
+img {
+    border-radius: 40px;
+    max-width: 100%;
+    height: auto;
+}
+
+h1, h2 {
+    margin: 0.5em 0;
+}
+
+button {
+    color: rgb(252, 248, 252);
+    background-color: rgb(189, 77, 144);
+    padding: 10px 20px;
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgb(165, 60, 130);
+}
+
+

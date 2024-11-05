@@ -1,0 +1,369 @@
+:root {
+    --primary-color: rgb(237, 117, 157);
+    --background-color: #d5c5d1da;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+/* Tag Section Styles */
+.Tag {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5%;
+    height: 100%;
+    width: 100%;
+    margin-top: 0px; /* Prevent overlapping with navbar */
+}
+
+.t {
+    position: relative;
+    flex: 1;
+    text-align: right;
+    margin-right: 20%;
+}
+
+.t::before,
+.t::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    border: 2px var(--primary-color) solid;
+    width: calc(50% - 50px);
+    height: 0;
+}
+
+.t::before {
+    left: -10px;
+    bottom: -35px;
+    box-shadow:0 4px 6px rgba(197, 142, 234, 0.582) ;
+}
+
+.t::after {
+    
+    bottom: -35px;
+    right: -28px;
+    box-shadow:0 4px 6px rgba(197, 142, 234, 0.582) ;
+}
+
+.shop {
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    width: 150px;
+    height: 50px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.t1 {
+    font-size: clamp(1rem, 1rem + 2.5vw, 2rem);
+    margin: 0;
+    text-shadow:0 4px 6px rgba(68, 17, 102, 0.619) ;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.Tagimg {
+    flex: 1;
+    text-align: right;
+    margin: 4% 10% 2% 2%;
+}
+
+.Tagimg img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 1000px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile View */
+@media screen and (max-width: 768px) {
+    .Tag {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+        margin: 15% 0;
+    }
+
+    .t {
+        margin: auto;
+        margin-top: 8px;
+    }
+
+    .t1 {
+        font-size: 2rem;
+        white-space: nowrap;
+        text-align: center;
+        margin-bottom: 13px;
+    }
+
+    .Tagimg {
+        max-width: 70%;
+        text-align: center;
+        margin: auto;
+    }
+}
+
+/* Featured Section */
+.featuring {
+    padding-top: 105px;
+    display: flex;
+    align-items: flex-start; /* Align items at the start */
+    padding-bottom:100px ;
+    padding-left: 20px;
+}
+
+.Fheading {
+    margin: 0; /* Remove margin to prevent gap */
+    font-size: clamp(1rem, 1rem + 2.5vw, 2rem);
+    margin-right: 20px; /* Space between heading and packages */
+    text-align: left; /* Align text to the left */
+    align-items: center;
+    margin-top: 160px;
+    color: #322514;
+}
+
+/* Product Card Styles */
+.product-slider {
+    display: flex; /* Ensure products are displayed in a row */
+}
+
+.package {
+    width: 300px;
+    height: 70%;
+    margin: 0 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px;
+    background-color: #4c031e5a;
+    box-shadow: 1px 4px 6px rgba(193, 179, 179, 0.596);
+    
+}
+
+
+.package:hover {
+    width: 310px;
+    box-shadow: 0 0 2px rgb(47, 39, 46), 0 0 2px rgb(14, 0, 12), 0 0 2px rgb(117, 67, 146);
+}
+
+.typePackage {
+    font-size: clamp(0.9rem, 1rem + 1.3vw, 1.3rem);
+    color: #181514b4;
+}
+
+.price {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #181514b4;
+}
+
+/* Product Slider Styles */
+.product-slider {
+    display: flex;
+    gap: 20px;
+}
+
+/* Tracker Section */
+.tracker {
+    display: flex;
+    width: 100%;
+    align-items: center; /* Vertically center-align items */
+    justify-content: center; /* Center items */
+    flex-direction: column; /* Align items in a column */
+    padding: 20px;
+    text-align: center;
+    transition: background-color 0.3s ease; /* Smooth transition */
+    height: 100vh; /* Full viewport height */
+    
+}
+
+.tracker.color1 {
+    background-color: rgb(173, 216, 230); /* Example color 1 */
+}
+
+.tracker.color2 {
+    background-color: rgb(255, 192, 203); /* Example color 2 */
+}
+
+.tracker.color3 {
+    background-color: rgb(226, 216, 177); /* Example color 3 */
+}
+
+
+
+.tracker h1 {
+    flex: 0.5; 
+    text-align: center; /* Center text */
+    color: black;
+    text-shadow: 0 4px 6px rgba(28, 77, 4, 0.678);
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    
+    
+    
+}
+.container h1{
+    font-size: 1rem;
+    font-size: (0.9rem, 1rem + 1.3vw, 1.3rem);
+}
+.container .c{
+    height: auto;
+    max-height: 100%;
+    /* width:60%; */
+    /* margin: 25px; */
+    color:rgb(1, 10, 17);
+    width: 300px;
+    height: 100%;
+    margin: 0 10px;
+    border-radius: 19px;
+    box-shadow: 1px 4px 6px rgba(245, 242, 242, 0.547);
+    text-align: center;
+    padding: 10px;
+    background-color: #1a281a24;
+    
+
+}
+ 
+.Calender{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+
+}
+.Calender img{
+    width:50%;
+    margin-top: 15%;
+    margin-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 0%;
+
+
+}
+.Calender h1{
+    font-size: 2rem;
+    margin-top: 30%;
+    margin-right: 10%;
+    color:palevioletred;
+    text-shadow: 1px 4px 6px rgba(205, 132, 198, 0.745);
+}
+
+  
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .card {
+    background-color: #7da8a42b;
+    width: 30%;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(40, 57, 53, 0.586);
+    transition: transform 0.2s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow:0 4px 8px rgba(1, 52, 44, 0.522) ;
+  }
+  
+  .card-heading {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #053f3d;
+  }
+  
+  .card-text {
+    font-size: 1em;
+    color: #10453b;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .card {
+      width: 45%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card {
+      width: 100%;
+    }
+  }
+
+  .intro h1{
+    font-size: 2rem;
+    font-size: clamp(1.5rem, 1.5rem + 2vw, 2.5rem);
+    margin-top: 10%;
+    color: #29504eee;
+  }
+  .sub{
+    align-items: center;
+    text-align: center;
+    margin-top: 10%;
+    
+  }
+  .sub h1{
+    color: palevioletred;
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+  }
+  .sub h3{
+    color: palevioletred;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 3%;
+  }
+  
+
+  .footer-section {
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    color:palevioletred;
+    text-align: center;
+    
+  }
+  
+  .company-name, .contact-number, .contact-email {
+    margin-bottom: 1.5rem;
+  }
+  
+  .policies {
+    margin-top: 1rem;
+    color: palevioletred;
+    text-align: center;
+  }
+  
+  .policy-link {
+    color:palevioletred;
+    text-decoration: none;
+    margin-left: 0.25rem;
+  }
+  
+  .policy-link:hover {
+    text-decoration: underline;
+  }
+  
