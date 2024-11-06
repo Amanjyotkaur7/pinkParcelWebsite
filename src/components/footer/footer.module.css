@@ -1,0 +1,76 @@
+.container {
+  text-align: center;
+}
+
+.title {
+  font-size: 48px;
+  line-height: 64px;
+  width: 1340px;
+  height: 64px;
+  font-weight: 600;
+  color: #e78895;
+}
+
+.subtitle {
+  font-size: 1rem;
+  margin: 20px;
+  color: #e78895;
+}
+
+.inputContainer {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input {
+  width: 18rem;
+  border-radius: 0.5rem;
+  border: 1px solid #e78895;
+  padding: 0.5rem 1rem;
+}
+
+.input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #e78895;
+}
+
+.button {
+  margin-left: 1rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  font-weight: 700;
+  color: #e78895;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #e78895;
+  color: white;
+}
+
+.companyInfo {
+  margin-top: 44px;
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.companyName {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #e78895;
+}
+
+.contactInfo {
+  margin-top: 20px;
+  color: #e78895;
+}
+
+.footer {
+  margin-top: 46px;
+  padding: 1.5rem 0 3rem 10rem;
+  text-align: justify;
+  font-size: 0.75rem;
+  color: #e78895;
+}
